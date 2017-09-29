@@ -11,4 +11,5 @@ feh
 dmenu
 terminator
 conky-lua
+alsa-utils
 ```
