@@ -1,0 +1,21 @@
+[global_config]
+  title_hide_sizetext = True
+  disable_real_transparency = "True"
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    foreground_color = "#ffffff"
+    show_titlebar = false
+    background_darkness = 0.5
+    background_image = None
