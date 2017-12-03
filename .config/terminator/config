@@ -18,3 +18,4 @@
     show_titlebar = false
     background_darkness = 0.7
     background_image = None
+    scrollback_lines = 3000
