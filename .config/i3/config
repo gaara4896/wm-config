@@ -191,7 +191,8 @@ bindsym XF86AudioLowerVolume exec amixer set Master -q 2%- #decrease sound volum
 bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
 
 # Printscreen
-bindsym Print exec ~/.config/i3/screenshot.sh
+bindsym Print exec maim ~/Pictures/Screenshots/$(date +%Y%m%d%:::z%T).png
+bindsym $mod+Print exec maim -s ~/Pictures/Screenshots/$(date +%Y%m%d%:::z%T).png
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
