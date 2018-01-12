@@ -266,3 +266,4 @@ for_window [window_role=floating] floating enable
 exec --no-startup-id nm-applet
 exec --no-startup-id redshift-gtk
 exec --no-startup-id udiskie -ANt2 
+exec --no-startup-id fcitx

@@ -19,4 +19,10 @@ network-manager-applet
 networkmanager
 udiskie
 redshift
+gtk2
+gtk3
+fcitx
+fcitx-im
+fcitx-sogoupinyin
+fcitx-configtool
 ```
