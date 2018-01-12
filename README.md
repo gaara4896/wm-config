@@ -12,4 +12,11 @@ dmenu
 terminator
 conky-lua
 alsa-utils
+dunst
+maim
+ttf-font-awesome
+network-manager-applet
+networkmanager
+udiskie
+redshift
 ```
