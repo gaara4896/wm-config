@@ -19,3 +19,4 @@
     background_darkness = 0.8
     background_image = None
     scrollback_lines = 3000
+    scrollbar_position = disabled
