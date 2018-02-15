@@ -125,6 +125,16 @@ set $ws17 "17 "
 set $ws18 "18 "
 set $ws19 "19 "
 set $ws20 "20 "
+set $ws21 "21 "
+set $ws22 "22 "
+set $ws23 "23 "
+set $ws24 "24 "
+set $ws25 "25 "
+set $ws26 "26 "
+set $ws27 "27 "
+set $ws28 "28 "
+set $ws29 "29 "
+set $ws30 "30 "
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -147,6 +157,16 @@ bindsym $mod+Control+7 workspace $ws17
 bindsym $mod+Control+8 workspace $ws18
 bindsym $mod+Control+9 workspace $ws19
 bindsym $mod+Control+0 workspace $ws20
+bindsym $mod+Mod1+1 workspace $ws21
+bindsym $mod+Mod1+2 workspace $ws22
+bindsym $mod+Mod1+3 workspace $ws23
+bindsym $mod+Mod1+4 workspace $ws24
+bindsym $mod+Mod1+5 workspace $ws25
+bindsym $mod+Mod1+6 workspace $ws26
+bindsym $mod+Mod1+7 workspace $ws27
+bindsym $mod+Mod1+8 workspace $ws28
+bindsym $mod+Mod1+9 workspace $ws29
+bindsym $mod+Mod1+0 workspace $ws30
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
@@ -169,6 +189,16 @@ bindsym $mod+Control+Shift+7 move container to workspace $ws17
 bindsym $mod+Control+Shift+8 move container to workspace $ws18
 bindsym $mod+Control+Shift+9 move container to workspace $ws19
 bindsym $mod+Control+Shift+0 move container to workspace $ws20
+bindsym $mod+Mod1+Shift+1 move container to workspace $ws21
+bindsym $mod+Mod1+Shift+2 move container to workspace $ws22
+bindsym $mod+Mod1+Shift+3 move container to workspace $ws23
+bindsym $mod+Mod1+Shift+4 move container to workspace $ws24
+bindsym $mod+Mod1+Shift+5 move container to workspace $ws25
+bindsym $mod+Mod1+Shift+6 move container to workspace $ws26
+bindsym $mod+Mod1+Shift+7 move container to workspace $ws27
+bindsym $mod+Mod1+Shift+8 move container to workspace $ws28
+bindsym $mod+Mod1+Shift+9 move container to workspace $ws29
+bindsym $mod+Mod1+Shift+0 move container to workspace $ws30
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -266,6 +296,7 @@ bindsym $mod+x mode "$mode_display"
 #program preference
 for_window [window_role=floating] floating enable
 
+exec --no-startup-id xrdb ~/.Xresources
 exec --no-startup-id nm-applet
 exec --no-startup-id redshift-gtk
 exec --no-startup-id udiskie -ANt2 

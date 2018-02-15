@@ -25,4 +25,5 @@ fcitx
 fcitx-im
 fcitx-sogoupinyin
 fcitx-configtool
+xorg-xrdb
 ```
