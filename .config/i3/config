@@ -137,6 +137,8 @@ set $ws28 "28 "
 set $ws29 "29 "
 set $ws30 "30 "
 
+assign [class="Slack"] $ws9
+
 # switch to workspace
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
