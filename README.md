@@ -6,6 +6,7 @@
 i3
 xorg-xinit
 xorg
+xorg-apps
 compton
 feh
 dmenu
@@ -26,4 +27,12 @@ fcitx-im
 fcitx-sogoupinyin
 fcitx-configtool
 xorg-xrdb
+librsvg
+net-tools
+lightdm
+lightdm-gtk-greeter
+gnome-keyring
+libsecret
+ranger
+w3m
 ```

@@ -1,0 +1,9 @@
+dbus-update-activation-environment --systemd DISPLAY
+eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+export SSH_AUTH_SOCK
+
+xrdb ~/.Xresources
+nm-applet &
+redshift -O 2400
+udiskie -ANt2 &
+fcitx &

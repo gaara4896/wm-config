@@ -225,7 +225,7 @@ bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
 
 # Printscreen
 bindsym Print exec maim ~/Pictures/Screenshots/$(date +%Y%m%d%:::z%T).png
-bindsym $mod+Print exec maim -s ~/Pictures/Screenshots/$(date +%Y%m%d%:::z%T).png
+bindsym Shift+Print exec maim -s ~/Pictures/Screenshots/$(date +%Y%m%d%:::z%T).png
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -282,11 +282,11 @@ bindsym $mod+shift+e mode "$mode_system"
 set $mode_display Dispay [m]ain, [e]xtend, [d]uplicate, [s]econd, [c]oding
 mode "$mode_display" {
 
-	bindsym m exec --no-startup-id xrandr --output LVDS-1 --auto --output HDMI-1 --off
-	bindsym e exec --no-startup-id xrandr --output LVDS-1 --auto --output HDMI-1 --auto --right-of LVDS-1
-	bindsym d exec --no-startup-id xrandr --output LVDS-1 --auto --output HDMI-1 --same-as LVDS-1 --auto
-	bindsym s exec --no-startup-id xrandr --output LVDS-1 --off --output HDMI-1 --auto
-	bindsym c exec --no-startup-id xrandr --output LVDS-1 --auto --output HDMI-1 --auto --right-of LVDS-1 --rotate left
+	bindsym m exec --no-startup-id xrandr --output DVI-I-1 --off --output DVI-D-0 --auto
+	bindsym e exec --no-startup-id xrandr --output DVI-I-1 --auto --output DVI-D-0 --auto --right-of DVI-I-1
+	bindsym d exec --no-startup-id xrandr --output DVI-I-1 --auto --output DVI-D-0 --same-as DVI-I-1 --auto
+	bindsym s exec --no-startup-id xrandr --output DVI-I-1 --auto --output DVI-D-0 --off
+	bindsym c exec --no-startup-id xrandr --output DVI-I-1 --auto --rotate left --output DVI-D-0 --auto --right-of DVI-I-1
 
     # back to normal: Enter or Escape
     bindsym Return mode "default"
@@ -297,8 +297,8 @@ bindsym $mod+x mode "$mode_display"
 #program preference
 for_window [window_role=floating] floating enable
 
-exec --no-startup-id xrdb ~/.Xresources
-exec --no-startup-id nm-applet
-exec --no-startup-id redshift -O 2400
-exec --no-startup-id udiskie -ANt2 
-exec --no-startup-id fcitx
+#exec --no-startup-id xrdb ~/.Xresources
+#exec --no-startup-id nm-applet
+#exec --no-startup-id redshift -O 2400
+#exec --no-startup-id udiskie -ANt2 
+#exec --no-startup-id fcitx
