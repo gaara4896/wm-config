@@ -125,10 +125,10 @@ set $ws16 "16 "
 set $ws17 "17 "
 set $ws18 "18 "
 set $ws19 "19 "
-set $ws20 "20 "
-set $ws21 "21 "
-set $ws22 "22 "
-set $ws23 "23 "
+set $ws20 "20 "
+set $ws21 "21 "
+set $ws22 "22 "
+set $ws23 "23 "
 set $ws24 "24 "
 set $ws25 "25 "
 set $ws26 "26 "
@@ -138,6 +138,12 @@ set $ws29 "29 "
 set $ws30 "30 "
 
 assign [class="Slack"] $ws9
+assign [class="Inkscape"] $ws23
+assign [class="Steam"] $ws30
+
+for_window [class="Spotify"] move to workspace $ws20
+for_window [title="GNU Image Manipulation Program"] move to workspace $ws21
+for_window [title="Krita"] move to workspace $ws22
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -211,7 +217,7 @@ bindsym $mod+Shift+r restart
 #bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # Personalize background
-exec --no-startup-id feh --bg-scale ~/Pictures/matousakura.png
+exec --no-startup-id feh --bg-scale ~/Pictures/madokaandhomura.jpg
 
 # Start conky
 #exec --no-startup-id conky -c ~/.conky/conkyrc0

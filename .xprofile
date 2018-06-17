@@ -4,7 +4,8 @@ export SSH_AUTH_SOCK
 
 xrdb ~/.Xresources
 nm-applet &
-redshift -O 2400
+redshift-gtk &
 udiskie -ANt2 &
 fcitx &
 slack &
+blueberry-tray &
