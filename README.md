@@ -11,7 +11,7 @@ compton
 feh
 dmenu
 terminator
-conky-lua
+# conky-lua
 alsa-utils
 dunst
 maim
@@ -38,11 +38,11 @@ w3m
 ffmpegthumbnailer
 gst-libav
 gst-plugins-ugly
-steam
-ttf-liberation
-wqy-zenhei
-lib32-nvidia-utils
-steam-native-runtime
+# steam
+# ttf-liberation
+# wqy-zenhei
+# lib32-nvidia-utils
+# steam-native-runtime
 ntfs-3
 python-gobject
 python-xdg
@@ -50,4 +50,28 @@ gtk3
 bluez
 bluez-utils
 blueberry
+adobe-source-code-pro-fonts
+adobe-source-han-sans-cn-fonts
+adobe-source-han-sans-jp-fonts
+adobe-source-han-sans-tw-fonts
+adobe-source-han-serif-cn-fonts
+adobe-source-han-serif-tw-fonts
+adobe-source-sans-pro-fonts
+arc-gtk-theme
+gimp
+inkscape
+krita
+vlc
+lxappearance
+nvidia
+otf-font-awesome
+otf-ipafont
+otf-montserrat
+otf-raleway
+pulseaudio
+pulseaudio-bluetooth
+ttf-dejavu
+ttf-hanazono
+ttf-liberation
+ttf-roboto
 ```
