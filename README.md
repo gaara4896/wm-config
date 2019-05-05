@@ -74,4 +74,5 @@ ttf-dejavu
 ttf-hanazono
 ttf-liberation
 ttf-roboto
+caja
 ```
