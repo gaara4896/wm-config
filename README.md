@@ -25,7 +25,9 @@ gtk2
 gtk3
 fcitx
 fcitx-im
-fcitx-sogoupinyin
+fcitx-mozc
+fcitx-rime
+fcitx-qt5
 fcitx-configtool
 xorg-xrdb
 librsvg
