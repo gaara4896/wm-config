@@ -48,7 +48,7 @@ python-gobject
 python-xdg
 gtk3
 bluez
-bluez-utils
+blueman
 blueberry
 adobe-source-code-pro-fonts
 adobe-source-han-sans-cn-fonts
