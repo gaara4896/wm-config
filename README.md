@@ -40,13 +40,7 @@ ranger
 w3m
 ffmpegthumbnailer
 gst-libav
-gst-plugins-ugly
-# steam
-# ttf-liberation
-# wqy-zenhei
-# lib32-nvidia-utils
-# steam-native-runtime
-ntfs-3
+ntfs-3g
 python-gobject
 python-xdg
 gtk3
@@ -71,8 +65,9 @@ otf-font-awesome
 otf-ipafont
 otf-montserrat
 otf-raleway
-pulseaudio
-pulseaudio-bluetooth
+pipewire
+pipewire-alsa
+pipewire-pulse
 ttf-dejavu
 ttf-hanazono
 ttf-liberation
