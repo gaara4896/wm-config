@@ -18,6 +18,7 @@ maim
 ttf-font-awesome
 network-manager-applet
 networkmanager
+networkmanager-openvpn
 udiskie
 redshift
 gtk2
