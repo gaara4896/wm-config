@@ -2,9 +2,15 @@ dbus-update-activation-environment --systemd DISPLAY
 eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
 export SSH_AUTH_SOCK
 
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+
 xrdb ~/.Xresources
 nm-applet &
 udiskie -ANt2 &
 fcitx &
-slack &
-blueberry-tray &
+# slack --disable-gpu &
+blueman-applet &
+telegram-desktop &
+spotify --disable-gpu &

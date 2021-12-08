@@ -1,6 +1,15 @@
 [global_config]
   title_hide_sizetext = True
 [keybindings]
+[profiles]
+  [[default]]
+    background_darkness = 0.8
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    foreground_color = "#ffffff"
+    show_titlebar = False
+    scrollbar_position = hidden
+    scrollback_lines = 3000
 [layouts]
   [[default]]
     [[[child1]]]
@@ -10,13 +19,3 @@
       parent = ""
       type = Window
 [plugins]
-[profiles]
-  [[default]]
-    background_type = transparent
-    cursor_color = "#aaaaaa"
-    foreground_color = "#ffffff"
-    show_titlebar = false
-    background_darkness = 0.8
-    background_image = None
-    scrollback_lines = 3000
-    scrollbar_position = disabled

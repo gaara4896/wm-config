@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 6
+font pango:monospace 7
 new_window none
 new_float none
 
@@ -138,12 +138,14 @@ set $ws29 "29 "
 set $ws30 "30 "
 
 assign [class="Slack"] $ws9
-assign [class="Inkscape"] $ws23
-assign [class="Steam"] $ws30
-
+# assign [class="Inkscape"] $ws23
+# assign [class="Steam"] $ws30
+#
+for_window [class="Mailspring"] move to workspace $ws10
+for_window [class="Telegram"] move to workspace $ws8
 for_window [class="Spotify"] move to workspace $ws20
-for_window [title="GNU Image Manipulation Program"] move to workspace $ws21
-for_window [title="Krita"] move to workspace $ws22
+# for_window [title="GNU Image Manipulation Program"] move to workspace $ws21
+# for_window [title="Krita"] move to workspace $ws22
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -218,7 +220,7 @@ bindsym $mod+Shift+r restart
 
 # Personalize background
 # exec --no-startup-id feh --bg-scale ~/Pictures/madokaandhomura.jpg
-exec --no-startup-id feh --bg-scale --no-xinerama Pictures/girlshooting3.jpg
+exec --no-startup-id feh --bg-scale --no-xinerama Pictures/sun.jpg
 
 # Start conky
 #exec --no-startup-id conky -c ~/.conky/conkyrc0
@@ -231,13 +233,53 @@ exec --no-startup-id compton -b
 bindsym XF86AudioRaiseVolume exec amixer set Master -q 2%+ #increase sound volume
 bindsym XF86AudioLowerVolume exec amixer set Master -q 2%- #decrease sound volume
 bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease backlight
 
 # Printscreen
 bindsym Print exec maim ~/Pictures/Screenshots/$(date +%Y%m%d%:::z%T).png
 bindsym Shift+Print exec maim -s ~/Pictures/Screenshots/$(date +%Y%m%d%:::z%T).png
 
+set $mode_gaps Gaps: (o) outer, (i) inner
+set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
+set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
+bindsym $mod+Shift+g mode "$mode_gaps"
+
+mode "$mode_gaps" {
+        bindsym o      mode "$mode_gaps_outer"
+        bindsym i      mode "$mode_gaps_inner"
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+mode "$mode_gaps_inner" {
+        bindsym plus  gaps inner current plus 5
+        bindsym minus gaps inner current minus 5
+        bindsym 0     gaps inner current set 0
+
+        bindsym Shift+plus  gaps inner all plus 5
+        bindsym Shift+minus gaps inner all minus 5
+        bindsym Shift+0     gaps inner all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+mode "$mode_gaps_outer" {
+        bindsym plus  gaps outer current plus 5
+        bindsym minus gaps outer current minus 5
+        bindsym 0     gaps outer current set 0
+
+        bindsym Shift+plus  gaps outer all plus 5
+        bindsym Shift+minus gaps outer all minus 5
+        bindsym Shift+0     gaps outer all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
 # resize window (you can also use the mouse for that)
-mode "resize" {
+set $resize Resize [J]shrink width [K]grow height [L]shrink height [;]grow width [←]shrink width [↓]grow height [↑]shrink height [→]grow width [↲]default [ESC]default
+mode "$resize" {
         # These bindings trigger as soon as you enter the resize mode
 
         # Pressing left will shrink the window’s width.
@@ -288,14 +330,11 @@ mode "$mode_system" {
 }
 bindsym $mod+shift+e mode "$mode_system"
 
-set $mode_display Dispay [m]ain, [e]xtend, [d]uplicate, [s]econd, [c]oding
+set $mode_display Dispay [m]ain, [s]econd
 mode "$mode_display" {
 
-	bindsym m exec --no-startup-id xrandr --output DVI-I-1 --off --output DVI-D-0 --auto
-	bindsym e exec --no-startup-id xrandr --output DVI-I-1 --auto --output DVI-D-0 --auto --right-of DVI-I-1
-	bindsym d exec --no-startup-id xrandr --output DVI-I-1 --auto --output DVI-D-0 --same-as DVI-I-1 --auto
-	bindsym s exec --no-startup-id xrandr --output DVI-I-1 --auto --output DVI-D-0 --off
-	bindsym c exec --no-startup-id xrandr --output DVI-I-1 --auto --rotate left --output DVI-D-0 --auto --right-of DVI-I-1
+	bindsym m exec --no-startup-id xrandr --output eDP-1 --auto --output HDMI-2 --off && feh --bg-fill ~/Pictures/sun.jpg
+	bindsym s exec --no-startup-id xrandr --output eDP-1 --off --output HDMI-2 --auto && feh --bg-fill ~/Pictures/evathriceuponyou.jpeg
 
     # back to normal: Enter or Escape
     bindsym Return mode "default"
