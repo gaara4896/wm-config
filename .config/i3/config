@@ -220,7 +220,7 @@ bindsym $mod+Shift+r restart
 
 # Personalize background
 # exec --no-startup-id feh --bg-scale ~/Pictures/madokaandhomura.jpg
-exec --no-startup-id feh --bg-scale --no-xinerama Pictures/sun.jpg
+exec --no-startup-id feh --bg-scale --no-xinerama Pictures/evathriceuponyou.jpeg
 
 # Start conky
 #exec --no-startup-id conky -c ~/.conky/conkyrc0
@@ -345,8 +345,3 @@ bindsym $mod+x mode "$mode_display"
 #program preference
 for_window [window_role=floating] floating enable
 
-#exec --no-startup-id xrdb ~/.Xresources
-#exec --no-startup-id nm-applet
-#exec --no-startup-id redshift -O 2400
-#exec --no-startup-id udiskie -ANt2 
-#exec --no-startup-id fcitx

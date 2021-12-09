@@ -11,7 +11,6 @@ compton
 feh
 dmenu
 terminator
-# conky-lua
 alsa-utils
 dunst
 maim
@@ -23,12 +22,13 @@ udiskie
 redshift
 gtk2
 gtk3
-fcitx
-fcitx-im
-fcitx-mozc
-fcitx-rime
-fcitx-qt5
-fcitx-configtool
+fcitx5
+fcitx5-im
+fcitx5-mozc
+fcitx5-rime
+fcitx5-qt5
+fcitx5-gtk
+fcitx5-configtool
 xorg-xrdb
 librsvg
 net-tools
